@@ -1,0 +1,13 @@
+build:
+  config:
+    YARN_PRODUCTION: false
+  packages:
+    - yarn
+  pre:
+    - yarn install
+  test:
+    - yarn test
+  post:
+    - yarn build
+run:
+  web: yarn start
